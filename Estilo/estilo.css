@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1 40%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.producto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.agregar {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.lista-productos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-productos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lista-productos li img {
+    width: 100px;
+    height: auto;
+}
+
+.borrar {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#comprar {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#comprar:disabled {
+    background-color: #ccc;
+    color: #666;
+    
+}
+/* Estilos para la imagen del producto */
+.imagen-producto {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón "Mostrar Precio" */
+  .boton-precio {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón "Agregar al carrito" */
+  .boton-agregar {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón "Ver Carrito" */
+  .boton-carrito {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la tabla de carrito */
+  .tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para los encabezados de la tabla */
+  .tabla-carrito th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  .tabla-carrito td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para el botón "Comprar" */
+  .boton-comprar {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+/* Estilos para la imagen del producto */
+.imagen-producto {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón "Mostrar Precio" */
+  .boton-precio {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón "Agregar al carrito" */
+  .boton-agregar {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón "Ver Carrito" */
+  .boton-carrito {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la tabla de carrito */
+  .tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para los encabezados de la tabla */
+  .tabla-carrito th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  .tabla-carrito td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para el botón "Comprar" */
+  .boton-comprar {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Estilos para el título del formulario */
+  .formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .formulario input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .formulario button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el mensaje de error */
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+    

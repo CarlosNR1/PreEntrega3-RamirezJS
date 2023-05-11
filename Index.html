@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrito de compra</title>
+    <link rel="stylesheet" href="Estilo/estilo.css">
+</head>
+<body>
+	<header>
+		<h1>Carrito de compra</h1>
+	</header>
+	<main>
+		<section class="productos">
+			<h2>Placas de video</h2>
+			<div class="producto">
+				<img src="imagenes/gt 1030.jpg" alt="Placa de video GT 1030">
+				<h3>Placa de video GT 1030</h3>
+				<button class="agregar" data-id="1" data-nombre="Placa de video 1" data-precio="600">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/gtx 1660 ti.jpg" alt="Placa de video GTX 1660 Ti">
+				<h3>Placa de video GTX 1660 Ti</h3>
+				<button class="agregar" data-id="2" data-nombre="Placa de video 2" data-precio="700">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/gtx 3070.jpg" alt="Placa de video GTX 3070">
+				<h3>Placa de video GTX 3070</h3>
+				<button class="agregar" data-id="3" data-nombre="Placa de video 3" data-precio="900">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/gtx 4080.jpg" alt="Placa de video GTX 4080">
+				<h3>Placa de video GTX 4080</h3>
+				<button class="agregar" data-id="4" data-nombre="Placa de video 4" data-precio="1800">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/rtx 2060.jpg" alt="Placa de video RTX 2060">
+				<h3>Placa de video RTX 2060</h3>
+				<button class="agregar" data-id="5" data-nombre="Placa de video 5" data-precio="1000">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/rtx 3050.jpg" alt="Placa de video RTX 3050">
+				<h3>Placa de video RTX 3050</h3>
+				<button class="agregar" data-id="6" data-nombre="Placa de video 6" data-precio="1200">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/rx 550.jpg" alt="Placa de video RX 550">
+				<h3>Placa de video RX 550</h3>
+				<button class="agregar" data-id="7" data-nombre="Placa de video 7" data-precio="750">Agregar al carrito</button>
+			</div>
+            <div class="producto">
+				<img src="imagenes/rx 6650xt.jpg" alt="Placa de video RX 6650XT">
+				<h3>Placa de video RX 6650XT</h3>
+				<button class="agregar" data-id="8" data-nombre="Placa de video 8" data-precio="1500">Agregar al carrito</button>
+			</div>
+			<!-- Repetir para cada producto -->
+		</section>
+		<section class="carrito">
+			<h2>Carrito de compra</h2>	
+			<ul class="lista-productos">
+				<!-- Elementos del carrito -->
+			</ul>
+			<div class="total">
+				<p>Total: $<span id="total">0</span></p>
+				<button id="comprar">Comprar</button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Carrito de compra &copy; 2023</p>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
